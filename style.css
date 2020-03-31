@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  display: flex;
+}
+
+section {
+  color: yellow;
+}
+
+#score, #highscore {
+  background-color: black;
+  width: fit-content;
+}
