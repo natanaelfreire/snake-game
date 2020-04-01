@@ -20,4 +20,5 @@ function resetScore() {
 
   countScore = 0;
   score.innerHTML = `SCORE: ${countScore}`;
+  highScore.innerHTML = `HIGH SCORE: ${countHighScore}`;
 }
