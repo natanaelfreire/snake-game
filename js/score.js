@@ -1,11 +1,12 @@
-var score = document.querySelector('section div#score');
-var highScore = document.querySelector('section div#highscore');
+import { score, highScore } from './main.js';
 
 var countScore = 0;
 var countHighScore = JSON.parse(localStorage.getItem('player_snake')) || 0;
 
-score.innerHTML = `SCORE: ${countScore}`;
-highScore.innerHTML = `HIGH SCORE: ${countHighScore}`;
+function initScore() {
+  score.innerHTML = `SCORE: ${countScore}`;
+  highScore.innerHTML = `HIGH SCORE: ${countHighScore}`;
+}
 
 function setScore() {
   countScore += 10;
@@ -22,3 +23,5 @@ function resetScore() {
   score.innerHTML = `SCORE: ${countScore}`;
   highScore.innerHTML = `HIGH SCORE: ${countHighScore}`;
 }
+
+export { initScore, setScore, resetScore};

@@ -1,4 +1,7 @@
-class Fruit {
+import { ctx } from './main.js';
+import { scale } from './stageConstants.js';
+
+export class Fruit {
   constructor(x, y) {
     this.x = x;
     this.y = y;
